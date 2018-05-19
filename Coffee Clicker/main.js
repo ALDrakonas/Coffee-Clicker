@@ -61,10 +61,10 @@ var coffeeUpgradeMultiplier = 1;
 
 function buyGrinder(){
     if (coffee >= 20){     //cost changed for testing
-//hide the button
-        button.style.display = "none";
 //Add .2 to coffeeUpgradeMultiplier
         coffeeUpgradeMultiplier = coffeeUpgradeMultiplier + 0.2;
+    //hide the button
+        button.style.display = "none";
     }
 }
 
