@@ -56,9 +56,13 @@ function buyFrenchPress(){
 //function reusable for all upgrades by passing
 //new arguments to it.
 
+var coffeeUpgradeMultiplier = 1;
+
+
 function buyGrinder(){
-    if (coffee >= 500){
+    if (coffee >= 20){     //cost changed for testing
 //hide the button
+        button.style.display = "none";
 //Add .2 to coffeeUpgradeMultiplier
         coffeeUpgradeMultiplier = coffeeUpgradeMultiplier + 0.2;
     }
@@ -69,8 +73,6 @@ function buyGrinder(){
 //in a function that's run at the end of each
 //second, which multiplies the coffee variable
 //by a fraction of a percentage.
-
-var coffeeUpgradeMultiplier = 1;
 
 
 /*
@@ -93,7 +95,8 @@ window.setInterval(function(){
 	
 	brewCoffee(baristas);
     brewCoffee(espressoMachines * 2);
-    brewCoffee(frenchPresses * 4)
+    brewCoffee(frenchPresses * 4);
+    coffee = coffee * coffeeUpgradeMultiplier;
 
 
 }, 1000);
