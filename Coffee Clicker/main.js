@@ -1,3 +1,6 @@
+//Base code comes from http://dhmstark.co.uk/articles/incrementals.html
+//Thanks for the starting point! I hope to make this unrecognizable!
+
 var coffee = 0;
 
 function brewCoffee(number){
